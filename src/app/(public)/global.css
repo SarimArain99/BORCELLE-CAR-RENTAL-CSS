@@ -1,7 +1,10 @@
+*{
+    margin: 0;
+}
+
 .container{
     background: #363636;
 }
-
 
 .carCont{
     margin-top: 2.5rem;
