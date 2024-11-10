@@ -1,0 +1,99 @@
+.section {
+    background-color: #363636;
+    color: white;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f97316;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @media (min-width: 640px) {
+    .heading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  
+  .textCenter {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .description,
+  .subText {
+    color: #d1d5db;
+    margin-top: 1.5rem;
+    line-height: 1.75;
+    max-width: 64rem;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .subText {
+    text-align: justify;
+  }
+  
+  .list {
+    list-style-type: disc;
+    padding-inline-start: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @media (min-width: 768px) {
+    .sectionTitle {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .listItem {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #d1d5db;
+    text-align: justify;
+  }
+  
+  @media (min-width: 768px) {
+    .listItem {
+      font-size: 1.25rem;
+    }
+  }
+  
+  .boldText {
+    font-weight: 600;
+    color: white;
+  }
+  

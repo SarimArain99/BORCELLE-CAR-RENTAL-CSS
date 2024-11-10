@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #363636;
+  width: 100%;
+  z-index: 20;
+  height: 6rem;
+  padding-left: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-shadow: 0px 4px 10px rgba(54, 54, 54, 0.2);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: 9rem;
+  width: 9rem;
+  margin-top: 0.75rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logoImage {
+    display: block;
+  }
+}
+
+.logoLink {
+  font-size: 2.3rem;
+  font-family: serif;
+  text-decoration: none;
+  color: white;
+}
+
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+}
+
+.iconLarge {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  stroke: white;
+  fill: none;
+}
+
+.mobileContainer {
+  display: flex;
+  background: transparent;
+}
+
+@media (min-width: 1024px) {
+  .mobileContainer {
+    display: none;
+  }
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.buttonInner {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  transform: translateZ(0);
+  transition: all 1000ms;
+}
+
+.hamburgerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+  transform: translateZ(0);
+  transition: all 300ms;
+  transform-origin: center;
+  overflow: hidden;
+}
+
+.line {
+  height: 2px;
+  width: 28px;
+  background-color: white;
+  transform: translateZ(0);
+  transition: all 300ms;
+  transform-origin: left;
+}
+
+.lineMiddle {
+  height: 2px;
+  width: 50%;
+  background-color: white;
+  border-radius: 2px;
+  transform: translateZ(0);
+  transition: all 300ms;
+}
+
+.lineTopActive {
+  transform: rotate(42deg);
+}
+
+.lineMiddleActive {
+  transform: translateX(-40px);
+}
+
+.lineBottomActive {
+  transform: rotate(-42deg);
+}
+
+.menuContainer {
+  position: absolute;
+  top: 96px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 70%;
+  padding: 1rem;
+  background-color: #363636;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .menuContainer {
+    width: 50%;
+  }
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.infoIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: currentColor;
+  color: white;
+  transition: color 300ms;
+}
+
+.menuLink:hover .infoIcon {
+  color: #fb923c;
+}
+
+.carIcon,
+.contactIcon {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  stroke-width: 1;
+  transition: color 300ms;
+}
+
+.menuLink:hover .carIcon {
+  color: #fb923c;
+}
+
+.menuLink:hover .contactIcon {
+  color: #fb923c;
+}
+
+.menuText {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  transition: color 300ms;
+}
+
+.menuLink:hover .menuTextOrange {
+  color: #fb923c;
+}
+
+.menuLink:hover .menuTextBlue {
+  color: #fb923c;
+}
+
+.menuLink:hover .menuTextGreen {
+  color: #fb923c;
+}
